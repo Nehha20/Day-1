@@ -1,0 +1,20 @@
+#include<stdio.h>
+int Subtract(int iNo)
+{
+    int iAns = 0;
+    iAns = iNo - 5;
+    return iAns;
+}
+
+int main()
+{
+    int iVal= 0;
+    int iRes = 0;
+
+    printf("Enter a number\n");
+    scanf("%d", &iVal);
+
+    iRes = Subtract(iVal);
+    printf("Result after subtracting 5: %d\n", iRes);
+    return 0;
+}
