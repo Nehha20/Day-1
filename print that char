@@ -1,0 +1,13 @@
+#include <stdio.h>
+void Display(char CVal)
+{
+    printf("%c\n", CVal);
+}
+
+int main(){
+    char cVal = '\0';
+    printf("Enter a character\n");
+    scanf(" %c", &cVal); 
+    Display(cVal);
+    return 0;
+}
