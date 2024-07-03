@@ -1,0 +1,19 @@
+#include<stdio.h>
+void Displayconvert(char cVal){
+    if(cVal >= 'a' || cVal <= 'z'){
+        printf("%c", cVal - ('a' - 'A'));
+    }
+    else if(cVal >= 'A' || cVal <= 'Z'){
+        printf("%c", cVal + ('a' - 'A'));
+    }
+    else{
+        printf("Invalid character");
+    }
+}
+int main(){
+    char cVal = '\0';
+    printf("Enter the character\n");
+    scanf("%c", &cVal);
+    Displayconvert(cVal);
+    return 0;
+}
